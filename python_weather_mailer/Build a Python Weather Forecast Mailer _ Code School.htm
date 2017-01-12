@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://www.codeschool.com/screencasts/build-a-python-weather-forecast-mailer -->
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#" class=" modernizr-supports modernizr-cssfilters modernizr-flexbox modernizr-no-touchevents"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style><style class="vjs-styles-dimensions">
+      .watch-us-build-dimensions {
+        width: 910px;
+        height: 490px;
+      }
+
+      .watch-us-build-dimensions.vjs-fluid {
+        padding-top: 56.25%;
+      }
+    </style>
+<script type="text/javascript" async="" src="./Build a Python Weather Forecast Mailer _ Code School_files/segmentioSnippet.js"></script><script type="text/javascript" async="" src="./Build a Python Weather Forecast Mailer _ Code School_files/webengage-min-v-6.0.js"></script><script type="text/javascript" async="" src="./Build a Python Weather Forecast Mailer _ Code School_files/56dc3909084576066d3505a86040c1530faba4d3.2.js"></script><script type="text/javascript" async="" src="./Build a Python Weather Forecast Mailer _ Code School_files/fbevents.js"></script><script type="text/javascript" async="" src="./Build a Python Weather Forecast Mailer _ Code School_files/conversion_async.js"></script><script type="text/javascript" async="" src="https://s.adroll.com/j/roundtrip.js"></script><script src="./Build a Python Weather Forecast Mailer _ Code School_files/fbevents.plugins.identity.js" async=""></script><script type="text/javascript" id="analytics-js" async="" src="./Build a Python Weather Forecast Mailer _ Code School_files/analytics.min.js"></script><script type="text/javascript" src="./Build a Python Weather Forecast Mailer _ Code School_files/2700af8a3c"></script><script src="./Build a Python Weather Forecast Mailer _ Code School_files/nr-998.min.js"></script><script type="text/javascript" async="" src="./Build a Python Weather Forecast Mailer _ Code School_files/inpage_linkid.js" id="undefined"></script><script async="" src="./Build a Python Weather Forecast Mailer _ Code School_files/fbevents.js"></script><script type="text/javascript" async="" src="./Build a Python Weather Forecast Mailer _ Code School_files/dc.js"></script><script src="./Build a Python Weather Forecast Mailer _ Code School_files/120055048.js"></script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"2700af8a3c","applicationID":"11195121","transactionName":"c1xdF0ENClwHEU5CVkJWVg1QAxVEEUwSWVpH","queueTime":0,"applicationTime":271,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwUGVl5VGwIBVVhXBgMG"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="app-id=927194858" name="apple-itunes-app">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="NIKRy4XH97exkmOKnvcSd0BQQqEMuk09+dvIynJld1C2byGPxqWb7PKjTTq5U9vBQ9jvtVPGLgzLFD1/VDN5Xg==">
+<!-- Open Graph protocol: -->
+<meta property="og:logo" content="https://www.codeschool.com/assets/meta/og-logo-c95fcf45b709b6f818fa95abff33fe2df595837a399c13b8516e7a486e9746eb.png">
+<meta property="og:title" content="Build a Python Weather Forecast Mailer | Code School">
+<meta property="og:description" content="In this episode, Sarah Holderness and James Newton will build upon what was taught in both the Try Python and Flying Through Python courses. We will demonstrate how to get Python set up, and then build a project together step by step.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.codeschool.com/screencasts/build-a-python-weather-forecast-mailer">
+<meta property="og:image" content="https://www.codeschool.com/images/img-about-video.jpg">
+<meta property="og:site_name" content="Code School">
+<meta property="fb:admins" content="507374956">
+<meta property="fb:app_id" content="354557504622893">
+
+<title>Build a Python Weather Forecast Mailer | Code School</title>
+<link href="https://www.codeschool.com/assets/meta/favicon-dc00dc0d406d87035ef0c62fdb78aad90c6b6bd1905e1edada1a7f04c4bcc819.ico" rel="shortcut icon" type="image/x-icon">
+<link href="https://www.codeschool.com/assets/meta/apple-touch-icon-180x180-ea470bcaff92a466ac467df2746cd1e5f49e06c73ecb923871c502a7d72ade2d.png" rel="apple-touch-icon">
+<link href="https://www.codeschool.com/assets/meta/apple-touch-icon-192x192-7c4606a12d68cd31a58128d9a79471f09a5654503ec176318400ce9f496c1d00.png" rel="icon" sizes="192x192">
+
+
+<meta name="description" content="In this episode, Sarah Holderness and James Newton will build upon what was taught in both the Try Python and Flying Through Python courses. We will demonstrate how to get Python set up, and then build a project together step by step.">
+<link rel="stylesheet" media="screen" href="./Build a Python Weather Forecast Mailer _ Code School_files/application-f1cccc67c6faf5a80126eb55a2c10595c4273db6ed1c6232dda7b6e7e419467f.css">
+<link rel="stylesheet" media="screen" href="./Build a Python Weather Forecast Mailer _ Code School_files/css">
+<link rel="stylesheet" media="screen" href="./Build a Python Weather Forecast Mailer _ Code School_files/blackboard-stable.css">
+<link type="application/opensearchdescription+xml" rel="search" href="https://www.codeschool.com/opensearch.xml">
+
+<!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type="text/javascript">
+var _vwo_code=(function(){
+var account_id=50155,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script><script src="./Build a Python Weather Forecast Mailer _ Code School_files/j.php" type="text/javascript"></script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
+
+
+<script src="./Build a Python Weather Forecast Mailer _ Code School_files/s-code-contents-5ed9e04f374daddb68ae35707250fdcb4d0156bb.js"></script></head>
+<body class="screencasts screencasts-show " data-page="screencasts:show"><div id="lightningjs-wootric" style="display: none;"><div><iframe frameborder="0" id="lightningjs-frame-wootric" src="./Build a Python Weather Forecast Mailer _ Code School_files/saved_resource.html"></iframe></div></div>
+<a class="skip js-skipToContent" tabindex="1" href="https://www.codeschool.com/screencasts/build-a-python-weather-forecast-mailer#">Skip to content</a>
+<div class="dn db--m" data-sidebar=""></div>
+<ul class="js-note has-note"></ul>
+
+<header class="header row row--a has-dropdown js-navToggle-container" role="banner">
+<div class="cell header-cell">
+<div class="header-item prm" itemscope="" itemtype="http://schema.org/Organization">
+<a class="brand-link" itemprop="url" href="https://www.codeschool.com/account"><img alt="Code School" class="brand-img" itemprop="logo" src="./Build a Python Weather Forecast Mailer _ Code School_files/logo-code-school-ps-af6d2dac2b8f78566e48a0e451a9233894464e64927376b87d88402aebb76803.svg">
+</a></div>
+<div class="header-item header-item--grow sentry" id="main_nav"><nav class="nav header-item header-item--grow js-navToggle-nav" id="site-navigation" role="navigation">
+<a class="nav-menu js-navToggle" href="https://www.codeschool.com/screencasts/build-a-python-weather-forecast-mailer#"><div class="nav-box"></div>
+<div class="nav-menu-stack">
+<b class="srt">Menu</b>
+</div>
+</a><ol class="nav-list list list--object list--object--l list--object--single header-item header-item--grow dn fx--800">
+<li class="nav-item list-item dn db--800">
+<div class="dropdown dropdown--nested nav-dropdown js-dropdown-hover">
+<a class="nav-item-link list-item-link dropdown-mask js-dropdown-btn-hover" href="https://www.codeschool.com/learn">Learn
+<i class="icn icn--arrowDown--alt mlxs por pot2 tsxs"></i>
+</a><ul class="dropdown-menu tal js-dropdown-menu">
+<li class="dropdown-item">
+<a class="dropdown-item-link" href="https://www.codeschool.com/learn"><i class="dropdown-item-link-icon icn icn--seats mrxs por pot2n"></i>
+Paths
+</a></li>
+<li class="dropdown-item">
+<a class="dropdown-item-link" href="https://www.codeschool.com/courses"><i class="dropdown-item-link-icon icn icn--list mrxs por pot1"></i>
+Courses
+</a></li>
+<li class="dropdown-item">
+<a class="dropdown-item-link" href="https://www.codeschool.com/projects"><i class="dropdown-item-link-icon icn icn--watchUsBuild mrxs"></i>
+<span class="mv-textCallout" data-text="New">Projects</span>
+</a></li>
+<li class="dropdown-item">
+<a class="dropdown-item-link" href="https://www.codeschool.com/screencasts"><i class="dropdown-item-link-icon icn icn--screencast mrxs por pot1"></i>
+Screencasts
+</a></li>
+</ul>
+</div>
+</li>
+<span class="db dn--800">
+<li class="nav-item list-item"><a class="nav-item-link list-item-link" href="https://www.codeschool.com/courses">Courses</a></li>
+<li class="nav-item list-item"><a class="nav-item-link list-item-link" href="https://www.codeschool.com/screencasts">Screencasts</a></li>
+</span>
+<span class="db dn--800">
+<li class="nav-item list-item"><a class="nav-item-link list-item-link" href="https://www.codeschool.com/account">My Dashboard</a></li>
+<li class="nav-item list-item"><a class="nav-item-link list-item-link" href="https://www.codeschool.com/account/edit">My Profile</a></li>
+<li class="nav-item list-item"><a class="nav-item-link list-item-link" href="https://www.codeschool.com/users/2363125">My Report Card</a></li>
+<li class="nav-item list-item"><a class="nav-item-link list-item-link" href="https://www.codeschool.com/account/notifications">Notifications</a></li>
+<li class="nav-item list-item"><a class="nav-item-link list-item-link" href="https://www.codeschool.com/users/sign_out">Sign Out</a></li>
+</span>
+<li class="nav-item list-item"><a class="nav-item-link list-item-link" href="https://www.codeschool.com/support">Support</a></li>
+<li class="nav-item list-item mla">
+<a class="search-trigger" data-toggle="modal" data-target="#search-open" href="https://www.codeschool.com/screencasts/build-a-python-weather-forecast-mailer#"><span class="search-icn"></span>
+</a></li>
+<li class="nav-item nav-item--separator list-item dn db--800">
+<div class="dropdown dropdown--nested dropdown--east has-userMenu js-dropdown">
+<a class="bdrn js-dropdown-btn js-notifications-toggle evt-notification-bell-click" href="https://www.codeschool.com/account/notifications"><i class="icn icn--notice tcs tsh2 js-notifications-icon"></i>
+</a><div class="dropdown-menu dropdown-menu--l tal">
+<div class="js-notifications-response"></div>
+<div class="bc-snow-light bdrt pas tac thb tsh3">
+<a class="bdrn" href="https://www.codeschool.com/account/notifications">View All Notifications
+</a></div>
+</div>
+</div>
+</li>
+<li class="nav-item list-item dn db--800">
+<div class="dropdown dropdown--nested dropdown--east nav-dropdown has-userMenu js-dropdown">
+<a class="userMenu js-dropdown-btn" id="account-dropdown" href="https://www.codeschool.com/account"><img height="40" width="40" alt="" class="thumb userMenu-thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/0af1ce929c9f4228d767e72f2967186d.jpg">
+<i class="icn userMenu-icn"></i>
+</a><ul class="dropdown-menu tal">
+<li class="dropdown-item">
+<a class="dropdown-item-link" href="https://www.codeschool.com/account"><i class="dropdown-item-link-icon icn icn--dashboard mrxs"></i>
+My Dashboard
+</a></li>
+<li class="dropdown-item">
+<a class="dropdown-item-link" href="https://www.codeschool.com/users/2363125"><i class="dropdown-item-link-icon icn icn--avatar--alt mrxs"></i>
+My Report Card
+</a></li>
+<li class="dropdown-item">
+<a class="dropdown-item-link" href="https://www.codeschool.com/account/edit"><i class="dropdown-item-link-icon icn icn--settings mrxs"></i>
+My Profile
+</a></li>
+<li class="dropdown-item dropdown-item-link--subdued">
+<a class="dropdown-item-link dropdown-item-link--subdued" href="https://www.codeschool.com/users/sign_out"><i class="dropdown-item-link-icon icn icn--signOut mrxs"></i>
+Sign Out
+</a></li>
+</ul>
+</div>
+
+</li>
+</ol>
+</nav>
+<div class="modal modal--search fade js-searchAutocomplete-modal" id="search-open">
+<div class="modal-dialog modal-dialog--l">
+<div class="modal-content">
+<div class="modal-header bdrn">
+<a class="modal-close close" data-dismiss="modal" href="https://www.codeschool.com/screencasts/build-a-python-weather-forecast-mailer#"><b class="srt">Close</b>
+</a></div>
+<div class="modal-body">
+<form class="form js-searchAutocomplete-form" action="https://www.codeschool.com/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+<label class="search-label">
+<i class="icn icn--search"></i>
+Search
+</label>
+<textarea name="query" id="search-field" class="search-input--fullscreen js-searchAutocomplete" autofocus="autofocus" rows="1"></textarea>
+</form>
+
+<label class="search-label mtl js-searchAutocomplete-label is-hidden">
+Recommended
+</label>
+<div class="js-searchAutocomplete-results ptm"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<div class="js-skipToContent-content" tabindex="-1"></div>
+
+<main class="content" role="main"><div class="row row--d mbm por">
+<div class="cell">
+<a class="bookmark sentry js-bookmark bookmark--xl" rel="tooltip" title="" data-bookmark-type="Video" data-bookmark-id="1065" href="https://www.codeschool.com/screencasts/build-a-python-weather-forecast-mailer#" data-original-title="Add bookmark"><b class="srt">Bookmark</b>
+</a>
+</div>
+<div class="cell well well--l">
+<div class="bdrb bdr-steel mbm mbl--m">
+<div class="g">
+<div class="g-b g-b--l--3of5">
+<h1 class="h h--2">
+<b class="h-label mbxs tc-silver">Screencast</b>
+<span class="has-tag--heading tci">Build a Python Weather Forecast Mailer</span>
+<span><a class="tag tag--heading tag--heading--h2 tag--python" href="https://www.codeschool.com/learn/python">Python</a></span>
+</h1>
+</div>
+<div class="g-b g-b--l--2of5">
+<ul class="list list--inline fr--l mtl--l pbm tcs tss">
+<li class="list-item">
+<i class="icn icn--avatar mrxs"></i>
+Sarah Holderness
+</li>
+<li class="list-item">
+<i class="icn icn--calendar mrxs"></i>
+<time datetime="2016-01-28T20:27:00Z" title="January 28, 2016 20:27" class="js-relativeTime">11 months ago</time>
+</li>
+<li class="list-item">
+<i class="icn icn--comment mrxs"></i>
+7076 views
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="video video--center">
+
+<div class="video video--backdrop" height="360" width="640">
+<div class="cs-video-player" id="code-school-screencasts"><div crossorigin="anonymous" class="video-js vjs-default-skin vjs-big-play-centered watch-us-build-dimensions vjs-fluid vjs-controls-enabled vjs-workinghover vjs-has-started vjs-fullscreen vjs-paused vjs-user-inactive" id="watch-us-build" role="region" aria-label="video player"><video id="watch-us-build_html5_api" class="vjs-tech" crossorigin="anonymous" preload="auto" poster="https://projector.codeschool.com/videos/c2757a0b/thumbnail?site=codeschool&amp;sso=Tg5BfycB7jBnsNsjTAj4EWGXh73CRyXHUS1f643KBCPdT0hgiQNBeS7AXut9AmiKe7eSXlxV0eWD8ohuFBFtZR3vwNqE1OCPo5Y1cGZPrP8sDOTbd4SFh59EdMhmPrby" src="https://projector.codeschool.com/videos/c2757a0b.mp4?profile=720p&amp;site=codeschool&amp;sso=Tg5BfycB7jBnsNsjTAj4EWGXh73CRyXHUS1f643KBCPdT0hgiQNBeS7AXut9AmiKe7eSXlxV0eWD8ohuFBFtZR3vwNqE1OCPo5Y1cGZPrP8sDOTbd4SFh59EdMhmPrby">
+        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank" class="vjs-hidden" hidden="hidden">supports HTML5 video</a></p>
+      </video><div></div><div class="vjs-poster" tabindex="-1" style="background-image: url(&quot;https://projector.codeschool.com/videos/c2757a0b/thumbnail?site=codeschool&amp;sso=Tg5BfycB7jBnsNsjTAj4EWGXh73CRyXHUS1f643KBCPdT0hgiQNBeS7AXut9AmiKe7eSXlxV0eWD8ohuFBFtZR3vwNqE1OCPo5Y1cGZPrP8sDOTbd4SFh59EdMhmPrby&quot;);"></div><div class="vjs-text-track-display vjs-hidden" aria-live="assertive" aria-atomic="true"></div><div class="vjs-loading-spinner" dir="ltr"></div><div class="vjs-control-bar" dir="ltr" role="group"><button class="vjs-play-control vjs-control vjs-button vjs-paused" type="button" aria-live="polite"><span class="vjs-control-text">Play</span></button><button class="vjs-control vjs-button vjs-skipback-control vjs-skipback-active" role="button" aria-live="polite" tabindex="0" data-tooltip="Skip Back 15 Seconds">
+      <span class="vjs-control-text">Skip Back 15 Seconds</span>
+      
+    </button><button class="vjs-control vjs-button vjs-playlist-prev-control vjs-playlist-control-disabled" role="button" aria-live="polite" tabindex="0">
+      <span class="vjs-control-text">Previous Video</span>
+      
+    </button><button class="vjs-control vjs-button vjs-playlist-next-control vjs-playlist-control-disabled" role="button" aria-live="polite" tabindex="0">
+      <span class="vjs-control-text">Next Video</span>
+      
+    </button><div class="vjs-current-time vjs-time-control vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time</span> 25:59</div></div><div class="vjs-time-control vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 58:46</div></div><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="44.21" aria-valuemin="0" aria-valuemax="100" aria-label="progress bar" aria-valuetext="25:59"><div class="vjs-load-progress" style="width: 100%;"><span class="vjs-control-text" style="left: 0.00121002%; width: 0.00181501%;"><span>Loaded</span>: 0%</span><div style="left: 0.992614%; width: 99.0074%;"></div></div><div class="vjs-mouse-display" data-current-time="28:59" style="left: 1103px;"></div><div class="vjs-play-progress vjs-slider-bar" data-current-time="25:59" style="width: 44.21%;"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div></div></div><div class="vjs-live-control vjs-control vjs-hidden"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-remaining-time vjs-time-control vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -32:47</div></div><div class="vjs-custom-control-spacer vjs-spacer ">&nbsp;</div><div class="vjs-download-control vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-download-menu-active vjs-download-active" tabindex="0" role="menuitem" aria-live="polite" data-tooltip="null" aria-expanded="false" aria-haspopup="true" aria-label="Download Video"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite" aria-label="Download HD 720p Quality">HD 720p<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite" aria-label="Download SD 480p Quality">SD 480p<span class="vjs-control-text"></span></li></ul></div><span class="vjs-control-text">Download Video</span><iframe id="iframe-11" class="hidden-iframe" src="./Build a Python Weather Forecast Mailer _ Code School_files/saved_resource(1).html"></iframe></div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button " tabindex="0" role="menuitem" aria-live="polite" aria-expanded="false" aria-haspopup="true"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite">2x<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite">1.75x<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite">1.5x<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite">1.25x<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite">1x<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite">0.75x<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite">0.5x<span class="vjs-control-text"></span></li></ul></div><span class="vjs-control-text">Playback Rate</span><div class="vjs-playback-rate-value">1x</div></div><div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" aria-expanded="false" aria-haspopup="true" aria-label="Chapters Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-title" tabindex="-1">Chapters</li></ul></div><span class="vjs-control-text">Chapters</span></div><div class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" aria-expanded="false" aria-haspopup="true" aria-label="Descriptions Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-checked="true">descriptions off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Descriptions</span></div><div class="vjs-subtitles-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" aria-expanded="false" aria-haspopup="true" aria-label="Subtitles Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-checked="true">subtitles off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Subtitles</span></div><div class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" aria-expanded="false" aria-haspopup="true" aria-label="Captions Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-checked="true">captions off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Captions</span></div><button class="vjs-control vjs-button vjs-quality-control vjs-quality-active vjs-quality-selected" role="button" aria-live="polite" tabindex="0" aria-label="Change Quality" data-tooltip="Switch to SD Quality">
+      <span class="vjs-control-text">Change Quality</span>
+      
+    </button><div class="vjs-volume-menu-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-volume-menu-button-vertical vjs-vol-3" tabindex="0" role="button" aria-live="polite"><div class="vjs-menu"><div class="vjs-menu-content"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-vertical" role="slider" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" aria-label="volume level" aria-valuetext="100.00%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div><span class="vjs-control-text">Mute</span></div><button class="vjs-fullscreen-control vjs-control vjs-button " type="button" aria-live="polite"><span class="vjs-control-text">Non-Fullscreen</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="watch-us-build_component_373_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-offscreen" id="watch-us-build_component_373_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-caption-settings vjs-modal-overlay vjs-hidden"><div class="vjs-tracksettings">
+      <div class="vjs-tracksettings-colors">
+        <div class="vjs-fg-color vjs-tracksetting">
+            <label class="vjs-label">Foreground</label>
+            <select>
+              <option value="">---</option>
+              <option value="#FFF">White</option>
+              <option value="#000">Black</option>
+              <option value="#F00">Red</option>
+              <option value="#0F0">Green</option>
+              <option value="#00F">Blue</option>
+              <option value="#FF0">Yellow</option>
+              <option value="#F0F">Magenta</option>
+              <option value="#0FF">Cyan</option>
+            </select>
+            <span class="vjs-text-opacity vjs-opacity">
+              <select>
+                <option value="">---</option>
+                <option value="1">Opaque</option>
+                <option value="0.5">Semi-Opaque</option>
+              </select>
+            </span>
+        </div> <!-- vjs-fg-color -->
+        <div class="vjs-bg-color vjs-tracksetting">
+            <label class="vjs-label">Background</label>
+            <select>
+              <option value="">---</option>
+              <option value="#FFF">White</option>
+              <option value="#000">Black</option>
+              <option value="#F00">Red</option>
+              <option value="#0F0">Green</option>
+              <option value="#00F">Blue</option>
+              <option value="#FF0">Yellow</option>
+              <option value="#F0F">Magenta</option>
+              <option value="#0FF">Cyan</option>
+            </select>
+            <span class="vjs-bg-opacity vjs-opacity">
+                <select>
+                  <option value="">---</option>
+                  <option value="1">Opaque</option>
+                  <option value="0.5">Semi-Transparent</option>
+                  <option value="0">Transparent</option>
+                </select>
+            </span>
+        </div> <!-- vjs-bg-color -->
+        <div class="window-color vjs-tracksetting">
+            <label class="vjs-label">Window</label>
+            <select>
+              <option value="">---</option>
+              <option value="#FFF">White</option>
+              <option value="#000">Black</option>
+              <option value="#F00">Red</option>
+              <option value="#0F0">Green</option>
+              <option value="#00F">Blue</option>
+              <option value="#FF0">Yellow</option>
+              <option value="#F0F">Magenta</option>
+              <option value="#0FF">Cyan</option>
+            </select>
+            <span class="vjs-window-opacity vjs-opacity">
+                <select>
+                  <option value="">---</option>
+                  <option value="1">Opaque</option>
+                  <option value="0.5">Semi-Transparent</option>
+                  <option value="0">Transparent</option>
+                </select>
+            </span>
+        </div> <!-- vjs-window-color -->
+      </div> <!-- vjs-tracksettings -->
+      <div class="vjs-tracksettings-font">
+        <div class="vjs-font-percent vjs-tracksetting">
+          <label class="vjs-label">Font Size</label>
+          <select>
+            <option value="0.50">50%</option>
+            <option value="0.75">75%</option>
+            <option value="1.00" selected="">100%</option>
+            <option value="1.25">125%</option>
+            <option value="1.50">150%</option>
+            <option value="1.75">175%</option>
+            <option value="2.00">200%</option>
+            <option value="3.00">300%</option>
+            <option value="4.00">400%</option>
+          </select>
+        </div> <!-- vjs-font-percent -->
+        <div class="vjs-edge-style vjs-tracksetting">
+          <label class="vjs-label">Text Edge Style</label>
+          <select>
+            <option value="none">None</option>
+            <option value="raised">Raised</option>
+            <option value="depressed">Depressed</option>
+            <option value="uniform">Uniform</option>
+            <option value="dropshadow">Dropshadow</option>
+          </select>
+        </div> <!-- vjs-edge-style -->
+        <div class="vjs-font-family vjs-tracksetting">
+          <label class="vjs-label">Font Family</label>
+          <select>
+            <option value="">Default</option>
+            <option value="monospaceSerif">Monospace Serif</option>
+            <option value="proportionalSerif">Proportional Serif</option>
+            <option value="monospaceSansSerif">Monospace Sans-Serif</option>
+            <option value="proportionalSansSerif">Proportional Sans-Serif</option>
+            <option value="casual">Casual</option>
+            <option value="script">Script</option>
+            <option value="small-caps">Small Caps</option>
+          </select>
+        </div> <!-- vjs-font-family -->
+      </div>
+    </div>
+    <div class="vjs-tracksettings-controls">
+      <button class="vjs-default-button">Defaults</button>
+      <button class="vjs-done-button">Done</button>
+    </div></div></div></div>
+</div>
+
+<div class="memo memo--warning well">
+We changed the name of this series to “Watch Us Build,” so you may
+see its former name (“Soup to Bits”) in this video.
+</div>
+<ul class="list list--object video-controls video-controls--navigation">
+<li class="list-item"><a class="btn btn--b btn--s" href="https://www.codeschool.com/screencasts/mean-stack-firing-a-tracer-bullet">← Previous Video</a></li>
+<li class="list-item"><a class="btn btn--b btn--s" href="https://www.codeschool.com/screencasts/convert-a-javascript-sql-app-to-mongodb">Next Video →</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="cell well">
+<div class="g mbl mbxl--m">
+<div class="g-b g-b--l--3of5">
+<ul class="list tabList tabList--attached">
+<li class="list-item tabList-item">
+<a class="tabList-item-link js-stateUrls-link is-active" data-state="#resources" href="https://www.codeschool.com/screencasts/build-a-python-weather-forecast-mailer#resources">Resources</a>
+</li>
+<li class="list-item tabList-item">
+<a class="tabList-item-link js-stateUrls-link" data-state="#comments" href="https://www.codeschool.com/screencasts/build-a-python-weather-forecast-mailer#comments">Comments (45)</a>
+</li>
+</ul>
+<div class="card card--a has-tabList--attached mbm">
+<div class="js-stateUrls" id="resources">
+<h2 class="mbs">Resources</h2>
+<div class="markdown mbl">
+<ul>
+<li><a href="https://gist.github.com/sarahbees/21f78b1d06ff2985e4c9">Source code, GitHub Gist</a></li>
+<li><a href="https://www.python.org/downloads/">Python Downloads</a></li>
+<li><a href="https://docs.python.org/3/library/stdtypes.html#str.strip">String Methods:​ ​strip()</a></li>
+<li><a href="https://docs.python.org/3/library/stdtypes.html#str.split">String Methods: split()</a></li>
+<li><a href="http://docs.python-requests.org/en/latest/user/quickstart/">Python Requests Module</a></li>
+<li><a href="https://support.google.com/a/answer/176600?hl=en">Gmail smtp Settings</a></li>
+<li><a href="https://docs.python.org/3.5/library/smtplib.html">Python smtp Module</a></li>
+<li><a href="http://openweathermap.org/">Open Weather Map</a></li>
+</ul>
+
+</div>
+</div>
+<div class="js-stateUrls is-hidden" id="comments">
+<div class="mbm">
+<h2 class="mbm">
+Comments
+<a class="fr dn db--m tsxs" href="https://www.codeschool.com/screencasts/build-a-python-weather-forecast-mailer#add-comment">Add Comment</a>
+</h2>
+<ol class="list">
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/5fddfb46e1f7aa4fda9f9f1f148fa733.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/madajiji">Daniela Becerra</a>
+<em class="comment-date">said <time datetime="2016-01-31T08:46:44Z" title="January 31, 2016 08:46" class="js-relativeTime">11 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>I'm following along on my computer doing the project, and I tried to send the email using my account information, apparently, Gmail blocks the attempt to login because it's unsafe, how did you do it? I tried using flyingthroughpython's credentials, but you already seemed to changed the password, lol.
+I just want to practice... but I don't want to leave my account vulnerable.</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/379e7cd811f20454f4233c802d249227.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/Andyandpandy">Andyandpandy</a>
+<em class="comment-date">said <time datetime="2016-02-02T00:40:48Z" title="February 02, 2016 00:40" class="js-relativeTime">11 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>This took alot longer than it should have in my opinion. Nevertheless it was a nice screencast and learning a bit about the possibilities with python besides fooling around with exercises was great!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/23b01ca6152cc77663ea8c0761a674f0.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/rafaelfs">Rafael Santos</a>
+<em class="comment-date">said <time datetime="2016-02-02T10:51:10Z" title="February 02, 2016 10:51" class="js-relativeTime">11 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Is it in the plans to evolve the python path into a backend dev?</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/693f11702754f5eb7e9545e9ef544de3.jpg">
+</div>
+<div class="bucket-content">
+<span class="tag tag--static tag--subdue poa porf potxs">Faculty</span>
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/sarahb0816">Sarah Holderness</a>
+<em class="comment-date">said <time datetime="2016-02-03T15:32:10Z" title="February 03, 2016 15:32" class="js-relativeTime">11 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Daniela, we realized that we forgot a step in configuring the Gmail account to work the right way for this example.  If you create a brand new account it's not a problem, but if you're using an existing account, you'll first have to navigate to Gmail-&gt;My Account-&gt;Signing in to Google-&gt;Allow less secure apps and set that setting to ON.  If you leave that setting as OFF you have to do some extra authentication stuff that takes a little longer to set up, and we didn't want to include that in this video for the purposes of this demo (Look at app-specific passwords if you're interested).  If there's any other questions you can post in our forum <a href="http://discuss.codeschool.io/c/screencasts/soup-to-bits">http://discuss.codeschool.io/c/screencasts/soup-to-bits</a> and get help there!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/693f11702754f5eb7e9545e9ef544de3.jpg">
+</div>
+<div class="bucket-content">
+<span class="tag tag--static tag--subdue poa porf potxs">Faculty</span>
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/sarahb0816">Sarah Holderness</a>
+<em class="comment-date">said <time datetime="2016-02-03T15:33:44Z" title="February 03, 2016 15:33" class="js-relativeTime">11 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Rafael, we are working on more Python courses that will include backend dev.</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/420187311d2c7b37fe8ba99b5bd007f2.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/corwynofamber">Don Glover</a>
+<em class="comment-date">said <time datetime="2016-02-07T13:44:39Z" title="February 07, 2016 13:44" class="js-relativeTime">11 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Not possible to download this video?</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/ef08cafdf1cc150f9f143a59e9cbc9eb.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/2022354">Priyam Sarma</a>
+<em class="comment-date">said <time datetime="2016-02-07T16:53:27Z" title="February 07, 2016 16:53" class="js-relativeTime">11 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>When is it appropriate to keep the try..exception blocks in your code? Is it just for initial unit testing or would it exist in prod code? For example when you finalized your weather module, would we keep the try...exception blocks or not?</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/5fddfb46e1f7aa4fda9f9f1f148fa733.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/madajiji">Daniela Becerra</a>
+<em class="comment-date">said <time datetime="2016-02-11T06:24:55Z" title="February 11, 2016 06:24" class="js-relativeTime">11 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>thank you Sarah! I'll try again later in this week. :)</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/498d0760f43cec993a2f5ff881d1caa1.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/kernelfred">kernelfred</a>
+<em class="comment-date">said <time datetime="2016-02-12T16:44:08Z" title="February 12, 2016 16:44" class="js-relativeTime">11 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Great video!  At first I thought you would have wanted to edit the video so some of the minor goofs (typos and such) were removed, but I'm glad you kept them in.  Not only did it provide an impromptu opportunity to show some of the pitfalls when writing code, but it also kept the tone light!  Big fan of the Python series, really hope you guys make more videos.  Keep up the good work!  (PS - maybe you can add a caption mentioning the authentication issue with Gmail with 'insecure' apps?)</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/56fb263334c0bf1647b1da841ff3ee8b.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/2090323">Joshua Dickey</a>
+<em class="comment-date">said <time datetime="2016-02-12T22:23:06Z" title="February 12, 2016 22:23" class="js-relativeTime">11 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Great job! I loved this tutorial. Easy to follow instructions.</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/9c06ec704a78d551208506f1c72ea12b.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/16741">Mark Fletcher</a>
+<em class="comment-date">said <time datetime="2016-02-16T00:01:07Z" title="February 16, 2016 00:01" class="js-relativeTime">11 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Enjoyed watching this video. Looking forward to more Python courses and screencasts in future. Thanks!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/f90df41142a010950d0155b850487aef.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/coeibu">coeibu</a>
+<em class="comment-date">said <time datetime="2016-02-21T19:18:34Z" title="February 21, 2016 19:18" class="js-relativeTime">10 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>many thanks!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/d8d71b35e59634845c7b1b522824a832.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/andrefurquim">andrefurquim</a>
+<em class="comment-date">said <time datetime="2016-02-28T03:34:25Z" title="February 28, 2016 03:34" class="js-relativeTime">10 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>I like the pace of the instructor! It's was a lot easier for me to follow than the other casts! :)</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/d8d71b35e59634845c7b1b522824a832.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/andrefurquim">andrefurquim</a>
+<em class="comment-date">said <time datetime="2016-02-28T03:35:20Z" title="February 28, 2016 03:35" class="js-relativeTime">10 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>I suggest a Django course now.. :D</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/ccaa154172b1c5693895c928136208af.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/2215142">Fazle Arefin</a>
+<em class="comment-date">said <time datetime="2016-02-28T05:35:25Z" title="February 28, 2016 05:35" class="js-relativeTime">10 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Nicely presented. Thank you!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/391dd3a42166c331648bb0a4a7772b14.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/peacengell">peacengell</a>
+<em class="comment-date">said <time datetime="2016-03-06T18:55:28Z" title="March 06, 2016 18:55" class="js-relativeTime">10 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Yes a django course now. thanks for this lovely video tutorials so nice so easy to understand.
+make more if you can please this help newbies  a lot..</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/a4414a68264246eea429f503869bbbbf.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/kruasanova">kruasanova</a>
+<em class="comment-date">said <time datetime="2016-03-11T09:15:06Z" title="March 11, 2016 09:15" class="js-relativeTime">10 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>awesome! thanks!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/293fb83e37d36679fc71cf47f33ebf9e.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/2328919">Himanshu Virkar</a>
+<em class="comment-date">said <time datetime="2016-03-16T02:22:00Z" title="March 16, 2016 02:22" class="js-relativeTime">10 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Video was really useful to get started with a real example of Python. The video could have been a bit short if the "conversational" bit was left out, but nonetheless it was a very useful and practical session. Also, leaving out the various errors in it told us that we all should be cognitive of such coding errors.
+PS: Sara, please stop talking like a cat growling. It is very unpleasant on the ears! Sorry, but its true.</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/784c4ccb4cb52e5a24a2fbb2501a3177.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/ColinRice">Colin</a>
+<em class="comment-date">said <time datetime="2016-03-23T11:55:49Z" title="March 23, 2016 11:55" class="js-relativeTime">9 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Fantastic series so far. Would love to see more like this and in the same style. The Python course set-up and this video has been just what I needed to break back into coding. Last time was in the 80's!  I appreciate your good work.</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/d2f8fd9ccbe1050179f6aa3472ce1da4.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/TheCOLTRANE">TheCOLTRANE</a>
+<em class="comment-date">said <time datetime="2016-03-26T19:01:47Z" title="March 26, 2016 19:01" class="js-relativeTime">9 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Great walk through. The 'oops' add to the approach-ability when trying to learn! A pedantic point, on the weather API: the min / max for weather are within the city. If you want Hi/Low you need to query Forecast: 
+"Please, do not confuse min/max parameters in current weather API and forecast API. In current weather API temp_min and temp_max are optional parameters mean min / max temperature in the city at the current moment to see deviation from current temp just for your reference. For large cities and megalopolises geographically expanded it might be applicable. In most cases both temp_min and temp_max parameters have the same volume as 'temp'. Please, use temp_min and temp_max parameters in current weather API optionally."</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/76595fae824a7f642d3f854678a6fef4.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/2024450">Richik Haldar</a>
+<em class="comment-date">said <time datetime="2016-04-02T14:38:58Z" title="April 02, 2016 14:38" class="js-relativeTime">9 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>I am trying to use a tuple in the first function: get_emails() but it keeps saying "not enough values to unpack (expected 2, got 1) {}. What is going on here?</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/0a734cda55ce90da5e59af2c75627fff.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/edsecure">Eduardo</a>
+<em class="comment-date">said <time datetime="2016-04-07T23:00:14Z" title="April 07, 2016 23:00" class="js-relativeTime">9 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Great course.. thanks guys!  I am looking forward the Backend dev track!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/0b275f605d22ad3bcec0b51bc69d7e0e.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/Stuligan">Stuligan</a>
+<em class="comment-date">said <time datetime="2016-04-10T23:46:41Z" title="April 10, 2016 23:46" class="js-relativeTime">9 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>This was awesome! Thanks!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/fc96bd96218229eeb96570b3715e534e.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/Aboitier">Alban Boitier</a>
+<em class="comment-date">said <time datetime="2016-05-03T10:45:46Z" title="May 03, 2016 10:45" class="js-relativeTime">8 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Fantastic class, thank you guys. Just a thing: could you create a document easily downloadable with all the functions/commands we saw in the class as a reminder? Keep up the good work!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/3d4888b84a147ab2e6159a2b0f184a3e.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/hlavoe">HECTOR</a>
+<em class="comment-date">said <time datetime="2016-05-07T08:30:36Z" title="May 07, 2016 08:30" class="js-relativeTime">8 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Great course and great screencast
+If anyone helps I used this to get the password</p>
+
+<p>import getpass
+    password = getpass.getpass("What's your password? ")</p>
+
+<p>So the console won't show the password, like when you use sudo or su</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/23ea82260f4be177c3362873fc1d4eae.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/2461258">Haiyang Yu</a>
+<em class="comment-date">said <time datetime="2016-06-11T09:43:04Z" title="June 11, 2016 09:43" class="js-relativeTime">7 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Thanks to this video I managed to jump head start into python programming!</p>
+
+<p>I have been dragging this for more than 1 year and now you have shown my how simple it is to start programming in python and using standard and non-standard packages.</p>
+
+<p>But 1 major challenge I faced was to install non-standard package, i.e. requests.
+My MacBook has python 2.7 pre-installed.
+I installed homebrew to install pip and used pip to install requests.
+But when I tried to import requests in IDLE shell it prompted that requests cannot be found.</p>
+
+<p>After a lot of searching and trial I realised that I should use python3.5 alias to import requests in Terminal which did the trick...</p>
+
+<p>Hope you have this info available for complete beginners to Mac and python like me.
+But if you actually have put it somewhere and I had missed, then please ignore this...</p>
+
+<p>All in all, thanks for the cast!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/c7b60f88e2ea5b56ab5564dcf9af9624.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/DelitaMakanda">Délita Makanda</a>
+<em class="comment-date">said <time datetime="2016-06-19T18:01:41Z" title="June 19, 2016 18:01" class="js-relativeTime">6 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Great tutorial !</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/3b986bedb03ec684eb7abf1eb8cb9a4e.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/nicholson2208">nicholson2208</a>
+<em class="comment-date">said <time datetime="2016-06-22T22:14:44Z" title="June 22, 2016 22:14" class="js-relativeTime">6 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Hey guys, great video!</p>
+
+<p>For reference, I am using Python 3.5.1 on Windows. I ran into a weird issue while following along right around the 25:00 mark and I was hoping that someone could point out what I'm doing incorrectly. </p>
+
+<p>When I try to run my script, I get "ImportError: No module named 'requests'", even though the first line of my script is import requests but when I check in the Command Prompt by entering import requests, it seems to be working fine.</p>
+
+<p>I tried entering the relevant lines of code into the Command Prompt one and a time, and it works, but it doesn't work in my script.</p>
+
+<p>Anyone have any idea?</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/3b986bedb03ec684eb7abf1eb8cb9a4e.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/nicholson2208">nicholson2208</a>
+<em class="comment-date">said <time datetime="2016-06-22T23:23:53Z" title="June 22, 2016 23:23" class="js-relativeTime">6 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Just kidding, I fixed it! Thanks!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/6d71dea54bfca11b32913cfb453a5413.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/scalnan">Stephen Calnan</a>
+<em class="comment-date">said <time datetime="2016-06-28T17:08:03Z" title="June 28, 2016 17:08" class="js-relativeTime">6 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Minor clarification on SSL/TLS in the e-mail configuration section.  This doesn't encrypt your email, it encrypts the connection to the gmail server. If the recipient account is on a non-SSL/TLS server, gmail will forward it in the open.</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/9e0b9a92b70ff1bdd2c9a038dc16ee61.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/Jsthegr8">Jsthegr8</a>
+<em class="comment-date">said <time datetime="2016-06-30T18:16:12Z" title="June 30, 2016 18:16" class="js-relativeTime">6 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>This was fun and practical Thanks!, more Python Screencasts please :)</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/bf12336a32ea59cd2c68ee0f27bd1ebb.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/phudev95">Phu Phan</a>
+<em class="comment-date">said <time datetime="2016-07-04T06:11:01Z" title="July 04, 2016 06:11" class="js-relativeTime">6 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Nice :D</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/722e1a3ef937c48453f996654be711cc.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/ManuAngel">Manu Ah</a>
+<em class="comment-date">said <time datetime="2016-08-06T02:35:23Z" title="August 06, 2016 02:35" class="js-relativeTime">5 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>AWESOME video! Thank you Sarah! I always wanted to learn to use python and all of the courses helped amazingly to start this path. I never thought it could be used to develop email automation. Great work.</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/7d929a934df447054dcb6946fb347944.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/Onchangu">Onchangu</a>
+<em class="comment-date">said <time datetime="2016-09-09T00:21:42Z" title="September 09, 2016 00:21" class="js-relativeTime">4 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Cool!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/8c711ca4077cbe33636b80f24d670207.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/MarWildCoder">MarWildCoder</a>
+<em class="comment-date">said <time datetime="2016-10-12T11:37:48Z" title="October 12, 2016 11:37" class="js-relativeTime">3 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Really well explained the whole course and ScreenCast, it seems easy when learning this way, so clear and entertaining...Great job and thanks!!</p>
+
+<p>I had just one doubt during the Screencast, when using this code:</p>
+
+<hr>
+
+<p>def get_schedule():
+    try:
+        schedule_file = open('schedule.txt' , 'r')
+        schedule = schedule_file.read()
+    except FileNotFoundError as err:
+        print(err)<br>
+    return schedule</p>
+
+<hr>
+
+<p>If the .txt file didn't exist, the program crashes even I am using try and except, the message I get in the Python shell reads:</p>
+
+<hr>
+
+<p>UnboundLocalError: local variable 'schedule' referenced before assignment</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/693f11702754f5eb7e9545e9ef544de3.jpg">
+</div>
+<div class="bucket-content">
+<span class="tag tag--static tag--subdue poa porf potxs">Faculty</span>
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/sarahb0816">Sarah Holderness</a>
+<em class="comment-date">said <time datetime="2016-10-12T15:41:49Z" title="October 12, 2016 15:41" class="js-relativeTime">3 months ago</time></em>
+</h3>
+<div class="comment-body">
+<h2>Hi @MarWildCoder - Since schedule is defined inside your try block, if you try to return schedule outside of that block the interpreter doesn't know about it.  You can return it inside your try block instead, or define it as an empty string outside of the try block, either would work:</h2>
+
+<p>def get_schedule():
+    schedule = ''
+    try:
+        schedule_file = open('schedule.txt' , 'r')
+        schedule = schedule_file.read()
+    except FileNotFoundError as err:
+        print(err)</p>
+
+<h2>    return schedule</h2>
+
+<p>Hope that helps!  Thanks for watching :D</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/8c711ca4077cbe33636b80f24d670207.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/MarWildCoder">MarWildCoder</a>
+<em class="comment-date">said <time datetime="2016-10-27T10:48:44Z" title="October 27, 2016 10:48" class="js-relativeTime">2 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>It worked, thanks!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/af48fc8fd77df1e0c76ccdebf964546d.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/TerrenceR87">TerrenceR87</a>
+<em class="comment-date">said <time datetime="2016-11-13T16:11:04Z" title="November 13, 2016 16:11" class="js-relativeTime">2 months ago</time></em>
+</h3>
+<div class="comment-body">
+<p>@SarahHolderness ,</p>
+
+<p>Great walkthrough! :)  But I'm having trouble importing the requests module.</p>
+
+<p>Requests is available and works just fine when main.py is in a folder I'll call 'Parent.' Inside 'Parent' is also where I have pip, python, etc. installed.  </p>
+
+<p>But, when I place my whole project into a subfolder of 'Parent' and run main.py, I get "ImportError: no module named 'requests'."</p>
+
+<p>Any idea what is going on here?</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/af48fc8fd77df1e0c76ccdebf964546d.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/TerrenceR87">TerrenceR87</a>
+<em class="comment-date">said <time datetime="2016-11-14T23:10:28Z" title="November 14, 2016 23:10" class="js-relativeTime">a month ago</time></em>
+</h3>
+<div class="comment-body">
+<p>I managed to solve my problem. </p>
+
+<p>First, I uninstalled Python and the Python Launcher. </p>
+
+<p>When I went to reinstall Python, there is a checkbox at the bottom of the page that asks if you'd like to append Python to PATH. After googling and stackoverflowing for a day, it turns out that appending it to PATH allows us to access it across our machine.</p>
+
+<p>:)</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/2cf616d9b85473b9b9eecdda0194c5eb.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/ShayleeHansen">ShayleeHansen</a>
+<em class="comment-date">said <time datetime="2016-11-20T03:37:04Z" title="November 20, 2016 03:37" class="js-relativeTime">a month ago</time></em>
+</h3>
+<div class="comment-body">
+<p>I really enjoyed this video.  Nice to have a practical example to look at and follow along with.  Maybe one day I will get a mailing list going with my website :)</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/4d8b4e0d9696fd35bfca80621bb23bb9.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/1682362">MarkMad</a>
+<em class="comment-date">said <time datetime="2016-11-20T05:48:14Z" title="November 20, 2016 05:48" class="js-relativeTime">a month ago</time></em>
+</h3>
+<div class="comment-body">
+<p>I'm no expert but aren't you supposed to close the files after you've finished reading them? Also, I was cringing that during the testing, the emails were being sent to the whole mailing list. Thankfully, it wasn't a "real" mailing list, but since you previously tested it by sending it to yourself, you should have kept that until the final run where you replace it with a mailing list.</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/54a3469578b887c8c907fa4f49157e92.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/712041">Rafał Grzejszczyk</a>
+<em class="comment-date">said <time datetime="2016-11-20T22:16:58Z" title="November 20, 2016 22:16" class="js-relativeTime">a month ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Sarah, I love you!</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/c7531d53f4cc5cb07559f53b625c5a2c.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/binhpht">binhpht</a>
+<em class="comment-date">said <time datetime="2016-11-30T12:47:21Z" title="November 30, 2016 12:47" class="js-relativeTime">a month ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Sarah, im a big fan of you</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/76e0179842f7649a72d65f3ae144ce4a.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/rishitgupta">Rishit Gupta</a>
+<em class="comment-date">said <time datetime="2016-12-04T09:05:51Z" title="December 04, 2016 09:05" class="js-relativeTime">a month ago</time></em>
+</h3>
+<div class="comment-body">
+<p>Sarah, can you please help me? When I run the scripts, it says this-
+Traceback (most recent call last):
+  File "C:\Users\rishitgupta\Documents\RG\HTML\Weather Mailer\emailer.py", line 37, in 
+    main()
+  File "C:\Users\rishitgupta\Documents\RG\HTML\Weather Mailer\emailer.py", line 34, in main
+    smtp.send_emails(emails, forecast)
+  File "C:\Users\rishitgupta\Documents\RG\HTML\Weather Mailer\smtp.py", line 13, in send_emails
+    server.login(from_email, password)
+  File "C:\Users\rishitgupta\AppData\Local\Programs\Python\Python35-32\lib\smtplib.py", line 729, in login
+    raise last_exception
+  File "C:\Users\rishitgupta\AppData\Local\Programs\Python\Python35-32\lib\smtplib.py", line 720, in login
+    initial_response_ok=initial_response_ok)
+  File "C:\Users\rishitgupta\AppData\Local\Programs\Python\Python35-32\lib\smtplib.py", line 641, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14  Please log in via your web browser and\n5.7.14 then try again.\n5.7.14  Learn more at\n5.7.14  <a href="https://support.google.com/mail/answer/78754">https://support.google.com/mail/answer/78754</a> g82sm19242858pfb.43 - gsmtp')</p>
+
+<p>Please help me! Thanks</p>
+</div>
+</div>
+</div>
+</li>
+<li class="comment list-item">
+<div class="bucket">
+<div class="bucket-media dn db--m">
+<img height="50" width="50" alt="" class="comment-thumb thumb" src="./Build a Python Weather Forecast Mailer _ Code School_files/76e0179842f7649a72d65f3ae144ce4a.jpg">
+</div>
+<div class="bucket-content">
+<h3 class="comment-title tsl">
+<a class="comment-title-link" href="https://www.codeschool.com/users/rishitgupta">Rishit Gupta</a>
+<em class="comment-date">said <time datetime="2016-12-07T11:38:22Z" title="December 07, 2016 11:38" class="js-relativeTime">a month ago</time></em>
+</h3>
+<div class="comment-body">
+<p>@SarahHolderness , can you please help me? When I run the scripts, it says this- </p>
+
+<p>Traceback (most recent call last): File "C:\Users\rishitgupta\Documents\RG\HTML\Weather Mailer\emailer.py", line 37, in main() File "C:\Users\rishitgupta\Documents\RG\HTML\Weather Mailer\emailer.py", line 34, in main smtp.send_emails(emails, forecast) File "C:\Users\rishitgupta\Documents\RG\HTML\Weather Mailer\smtp.py", line 13, in send_emails server.login(from_email, password) File "C:\Users\rishitgupta\AppData\Local\Programs\Python\Python35-32\lib\smtplib.py", line 729, in login raise last_exception File "C:\Users\rishitgupta\AppData\Local\Programs\Python\Python35-32\lib\smtplib.py", line 720, in login initial_response_ok=initial_response_ok) File "C:\Users\rishitgupta\AppData\Local\Programs\Python\Python35-32\lib\smtplib.py", line 641, in auth raise SMTPAuthenticationError(code, resp) smtplib.SMTPAuthenticationError: (534, b'5.7.14 Please log in via your web browser and\n5.7.14 then try again.\n5.7.14 Learn more at\n5.7.14 <a href="https://support.google.com/mail/answer/78754">https://support.google.com/mail/answer/78754</a> g82sm19242858pfb.43 - gsmtp')</p>
+
+<p>Please help me! Thanks</p>
+</div>
+</div>
+</div>
+</li>
+
+</ol>
+<div class="form mtm">
+<form class="new_comment" id="new_comment" action="https://www.codeschool.com/screencasts/build-a-python-weather-forecast-mailer/comment" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ehiJjjgdeEBXtW3YmrnnhCn0ZVH7B0xXmvLuCckdeI349TnKe38UGxSEQ2i9HS4yKnzIRaR7L2aoPRu870t2gw=="><fieldset class="form-field">
+<textarea rows="2" placeholder="Post a comment…" id="add-comment" class="form-input form-input--condensed" label_class="form-label" name="comment[body]"></textarea>
+</fieldset>
+<input type="submit" name="commit" value="Post Your Comment" class="form-btn btn">
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="g-b g-b--l--2of5">
+<div class="video-desc l-xspace">
+<h3>About This Screencast</h3>
+<div class="tss">
+<p></p><p>In this episode, Sarah Holderness and James Newton will build upon what was taught in both the <a href="https://www.codeschool.com/courses/try-python">Try Python</a> and <a href="https://www.codeschool.com/courses/flying-through-python">Flying Through Python</a> courses. We will demonstrate how to get Python set up, and then build a project together step by step.</p>
+<p></p>
+</div>
+</div>
+<a class="btn btn--wide" href="itpc://www.codeschool.com/screencasts/podcast.xml?token=209c1dcfb4849f36b0dcb106d5fecb6a">Subscribe in iTunes</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="modal fade modal--sign-in">
+<div class="modal-dialog">
+<div class="modal-content">
+<a class="modal-close close" data-dismiss="modal" href="https://www.codeschool.com/screencasts/build-a-python-weather-forecast-mailer#"><b class="srt">Close</b>
+</a><div class="modal-body tac">
+<h3 class="h h--2 mbxs ptl">Create a Bookmark</h3>
+<p class="mbl tss twn">
+In order to bookmark this content, we'll need to add it to a Code
+School&nbsp;account.
+</p>
+<div class="mbm">
+<a class="btn btn--success" href="https://www.codeschool.com/users/sign_up">Create a Free Account</a>
+</div>
+<div class="pbl">
+<p class="mbf tcs tss">Already have an account?</p>
+<a class="link link--underline" href="https://www.codeschool.com/users/sign_in">Sign in</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer class="footer" role="contentinfo">
+<div class="row">
+<div class="cell well well--l">
+<div class="g">
+<div class="g-b g-b--m--1of2">
+<div class="g g--s">
+<div class="g-b g-b--m--1of2 g-b--xl--1of3">
+<ul class="footer-list list mbs mbm--xl">
+<li class="list-item oph twb">Code School</li>
+<li class="list-item"><a class="footer-list-link link list-item-link" href="https://www.codeschool.com/learn">Courses</a></li>
+<li class="list-item"><a class="footer-list-link link list-item-link" href="https://www.codeschool.com/screencasts">Screencasts</a></li>
+<li class="list-item"><a class="footer-list-link list-item-link" href="https://www.codeschool.com/blog">Blog</a></li>
+<li class="list-item"><a class="footer-list-link list-item-link" href="https://www.codeschool.com/pricing">Pricing</a></li>
+<li class="list-item"><a class="footer-list-link list-item-link" href="https://www.codeschool.com/pricing/team">For Business</a></li>
+</ul>
+</div>
+<div class="g-b g-b--m--1of2 g-b--xl--1of3">
+<ul class="footer-list list mbs mbm--xl">
+<li class="list-item oph twb">About Us</li>
+<li class="list-item"><a class="footer-list-link list-item-link" href="https://www.codeschool.com/about">Company</a></li>
+<li class="list-item"><a class="footer-list-link list-item-link" href="https://www.codeschool.com/jobs">Jobs</a></li>
+<li class="list-item"><a class="footer-list-link list-item-link" href="https://www.codeschool.com/press">Press</a></li>
+<li class="list-item"><a class="footer-list-link list-item-link" href="https://www.codeschool.com/terms">Terms of Use</a></li>
+<li class="list-item"><a class="footer-list-link list-item-link" href="https://www.codeschool.com/privacy">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="g-b g-b--xl--1of3">
+<ul class="footer-list list mbm">
+<li class="list-item oph twb">Need Help?</li>
+<li class="list-item"><a class="footer-list-link link list-item-link" href="https://www.codeschool.com/contact">Contact Us</a></li>
+<li class="list-item"><a class="footer-list-link list-item-link" href="https://www.codeschool.com/support">Knowledge Base</a></li>
+<li class="list-item"><a class="footer-list-link list-item-link" href="https://www.codeschool.com/discuss/">Forum</a></li>
+<li class="list-item"><a class="footer-list-link list-item-link" href="https://www.codeschool.com/courses/suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+<p class="footer-copyright footer-copyright--east">© 2017 Code School LLC. Crafted lovingly in Orlando, Florida.</p>
+
+<ul class="list iconList mbm mbf--m">
+<li class="iconList-item">
+<a class="iconList-item-link footer-list-link" href="https://twitter.com/codeschool"><b class="srt">Twitter</b>
+<i class="icn icn--twitter iconList-item-icn"></i>
+</a></li>
+<li class="iconList-item">
+<a class="iconList-item-link footer-list-link" href="https://www.facebook.com/CodeSchool"><b class="srt">Facebook</b>
+<i class="icn icn--facebook iconList-item-icn"></i>
+</a></li>
+<li class="iconList-item">
+<a class="iconList-item-link footer-list-link" href="http://instagram.com/codeschool"><b class="srt">Instagram</b>
+<i class="icn icn--instagram iconList-item-icn"></i>
+</a></li>
+</ul>
+</div>
+<div class="g-b g-b--m--1of2">
+<div class="footer-about">
+<div class="mbm">
+<img alt="Code School" class="mrm" width="200" height="42" src="./Build a Python Weather Forecast Mailer _ Code School_files/logo-code-school-ps-gray-8814d59fc1554fc3f550d3a63157d1a3d7712273de86aeed0e16aadaee2918d1.svg">
+<a href="https://itunes.apple.com/us/app/code-school/id927194858?mt=8"><img alt="Download in the App Store" width="135" height="40" src="./Build a Python Weather Forecast Mailer _ Code School_files/logo-app-store-331fa155842ca4eac6fa69bdfb731cd8f110a04ef4079b842758e517158c0291.svg">
+</a></div>
+<p class="pts tss">
+<strong>Code School</strong> teaches web technologies in the
+comfort of your browser with video lessons, coding challenges,
+and screencasts. We strive to help you learn by doing.
+</p>
+<div class="mbm mbl--m">
+<a class="link link--underline tss" href="https://www.codeschool.com/about">Learn More</a>
+</div>
+<a rel="tooltip" title="" data-placement="right" aria-label="Leave to pluralsight.com" href="http://www.pluralsight.com/" data-original-title="Visit pluralsight.com"><img alt="Pluralsight" class="db mbs mbf--m" src="./Build a Python Weather Forecast Mailer _ Code School_files/logo-pluralsight-gray-aabf17376e35e285b0d8726d8422bc5a8cea1d307c9bee47d1956537752fdfa9.svg">
+</a><p class="footer-copyright footer-copyright--south">© 2017 Code School LLC. Crafted lovingly in Orlando, Florida.</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="./Build a Python Weather Forecast Mailer _ Code School_files/vendor-d4dcdbb9cebf29920715005a9fab81f2ff6b5618bfa2a8b6f0992773bbcbe233.js"></script>
+<script src="./Build a Python Weather Forecast Mailer _ Code School_files/application-aa079d38fe3da6dddf8d229b3fff5d234a2b7c0e9e83dffd70af0278b745b3ff.js"></script>
+<script src="./Build a Python Weather Forecast Mailer _ Code School_files/blackboard-stable.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['ua97407499._require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js']);_gaq.push(['ua974074923._require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js']);
+_gaq.push(['ua97407499._setAccount', 'UA-9740749-9']);_gaq.push(['ua974074923._setAccount', 'UA-9740749-23']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+var _gaq = _gaq || [];
+_gaq.push(['ua97407499._trackPageview', '/screencasts/build-a-python-weather-forecast-mailer']);
+_gaq.push(['ua974074923._trackPageview', '/screencasts/build-a-python-weather-forecast-mailer']);/* ]]> */
+</script>
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '992594827451424');
+
+  if (typeof CS === 'object' && typeof CS.Globals === 'object' && CS.Globals.isOwnFacebookPixel) {
+    fbq('addPixelId', '711424372302053');
+  }
+
+  fbq('track', 'PageView');
+</script>
+
+<noscript>
+  &lt;img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=992594827451424&amp;ev=PageView&amp;noscript=1'/&gt;
+</noscript>
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.codeschool.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.codeschool.com/search?query={search_term_string}&rel=sitelinks",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+
+
+<script>
+  $(function() {
+    new CS.Classes.VideoManager({"autoplay":true,"autoadvance":false,"download":true,"allowHeartbeat":true,"domain":"codeschool","media":[{"title":"Build a Python Weather Forecast Mailer","videoId":"c2757a0b","poster":"https://projector.codeschool.com/videos/c2757a0b/thumbnail?site=codeschool\u0026sso=Tg5BfycB7jBnsNsjTAj4EWGXh73CRyXHUS1f643KBCPdT0hgiQNBeS7AXut9AmiKe7eSXlxV0eWD8ohuFBFtZR3vwNqE1OCPo5Y1cGZPrP8sDOTbd4SFh59EdMhmPrby","media":"https://projector.codeschool.com/videos/c2757a0b/data.json?site=codeschool\u0026sso=Tg5BfycB7jBnsNsjTAj4EWGXh73CRyXHUS1f643KBCPdT0hgiQNBeS7AXut9AmiKe7eSXlxV0eWD8ohuFBFtZR3vwNqE1OCPo5Y1cGZPrP8sDOTbd4SFh59EdMhmPrby","heartbeat":"https://projector.codeschool.com/api/v1/video_views?site=codeschool\u0026sso=Tg5BfycB7jBnsNsjTAj4EWGXh73CRyXHUS1f643KBCPdT0hgiQNBeS7AXut9AmiKe7eSXlxV0eWD8ohuFBFtZR3vwNqE1OCPo5Y1cGZPrP8sDOTbd4SFh59EdMhmPrby"}],"modal":false,"modalId":"video-player-modal","playerId":"code-school-screencasts","title":"Watch Us Build","userId":2363125,"openClass":"js-video-manager-open","resumeVideo":true});
+  });
+</script>
+
+
+<style>body.tablesorter-disableSelection { -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none; -webkit-user-select: none; user-select: none; }.tablesorter-resizable-container { position: relative; height: 1px; }.tablesorter-resizable-handle { position: absolute; display: inline-block; width: 8px;top: 1px; cursor: ew-resize; z-index: 3; user-select: none; -moz-user-select: none; }</style><webengagedata><style type="text/css">#webklipper-publisher-widget-container, #webklipper-publisher-widget-container * {overflow:visible; -webkit-box-sizing: content-box; -moz-box-sizing: content-box;  box-sizing: content-box; margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}</style><div id="webklipper-publisher-widget-container"><iframe name="webengage-engagement-callback-frame" id="webengage-engagement-callback-frame" frameborder="0" marginheight="0" marginwidth="0" style="position: absolute; background-color: transparent; bottom: 0px; right: 0px; border: none; overflow: hidden; visibility: hidden; display: none;" src="./Build a Python Weather Forecast Mailer _ Code School_files/saved_resource(2).html"></iframe><iframe name="_we_wk_data_store" id="_we_wk_data_store" frameborder="0" marginheight="0" marginwidth="0" src="./Build a Python Weather Forecast Mailer _ Code School_files/storage-frame-1.14.html" style="position: absolute; background-color: transparent; bottom: 0px; right: 0px; border: none; overflow: hidden; visibility: hidden; display: none;"></iframe></div></webengagedata></body></html>
