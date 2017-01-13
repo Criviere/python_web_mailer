@@ -9,8 +9,8 @@ def send_emails(emails, forecast):
     server.starttls()
 
     # Login
-    password = 'Hcfd666666'
-    from_email = 'criviere@gmail.com'
+    password = 'xAK7ySPK0@IWVWqH'
+    from_email = 'awaythrow877@gmail.com'
     server.login(from_email, password)
 
     # Send to entire e-mail list
