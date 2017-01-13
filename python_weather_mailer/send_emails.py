@@ -1,3 +1,4 @@
+#! /usr/bin/python2.7
 import smtplib
 
 def send_emails(emails, forecast):
@@ -8,7 +9,7 @@ def send_emails(emails, forecast):
     server.starttls()
 
     # Login
-    password = input("What's your password?")
+    password = 'Hcfd666666'
     from_email = 'criviere@gmail.com'
     server.login(from_email, password)
 

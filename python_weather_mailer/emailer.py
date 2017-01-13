@@ -1,3 +1,4 @@
+#! /usr/bin/python2.7
 import get_emails
 import send_emails
 import weather
