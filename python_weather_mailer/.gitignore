@@ -1,1 +1,3 @@
-*.pyc
+get_emails.pyc
+weather.pyc
+send_emails.pyc
