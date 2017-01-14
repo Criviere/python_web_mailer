@@ -1,6 +1,6 @@
-#Camilo Riviere
-#Date Created: 01/12/2017
-#Python Web Mailer v0.1
+##Author: Camilo Riviere
+##Date Created: 01/12/2017
+##Python Web Mailer: v0.1
 <br>
 
 
