@@ -12,10 +12,13 @@ Python Web Mailer is a simple application that sends a daily weather update to y
 
 
 
-#How To Run
+#Steps To Run
 <br>
 
-Step 1: Open Terminal
-Step 2: Go to directory where files are located
-Step 3: type `python emailer.py` in termimal
-Step 4: Hit enter
+1. Open Terminal
+
+2. Go to directory where files are located
+
+3. type `python emailer.py` in termimal
+
+4. Hit enter
